@@ -1,0 +1,149 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.2" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.FrameFormInfo">
+  <Properties>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection code="new java.awt.Color(255, 205, 156)" type="code"/>
+    </Property>
+    <Property name="title" type="java.lang.String" value="TM1 Windows Service Creator"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="windowClosing" listener="java.awt.event.WindowListener" parameters="java.awt.event.WindowEvent" handler="exitForm"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                      <Component id="PathLabel" alignment="0" min="-2" pref="131" max="-2" attributes="0"/>
+                      <Component id="Namelabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="dataLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="Addbutton" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="DataField" max="32767" attributes="1"/>
+                          <Component id="NameField" max="32767" attributes="1"/>
+                          <Component id="pathField" alignment="0" pref="188" max="32767" attributes="1"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                      <Component id="Removebutton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Helpbutton" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="pathField" alignment="0" max="32767" attributes="1"/>
+                  <Component id="PathLabel" alignment="0" min="-2" max="-2" attributes="1"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Namelabel" min="-2" max="-2" attributes="0"/>
+                  <Component id="NameField" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="dataLabel" min="-2" max="-2" attributes="0"/>
+                  <Component id="DataField" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Removebutton" min="-2" max="-2" attributes="0"/>
+                  <Component id="Helpbutton" min="-2" max="-2" attributes="0"/>
+                  <Component id="Addbutton" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="java.awt.TextField" name="pathField">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="C:\Program Files\cognos\tm1\bin\"/>
+      </Properties>
+    </Component>
+    <Component class="java.awt.TextField" name="NameField">
+    </Component>
+    <Component class="java.awt.TextField" name="DataField">
+    </Component>
+    <Component class="java.awt.Button" name="Addbutton">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="Add"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="AddbuttonMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Label" name="PathLabel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="" noResource="true"/>
+        <Property name="text" type="java.lang.String" value="TM1 install path"/>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="PathLabel"/>
+        <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+      </AccessibilityProperties>
+    </Component>
+    <Component class="java.awt.Label" name="Namelabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="name of server"/>
+      </Properties>
+    </Component>
+    <Component class="java.awt.Label" name="dataLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Data Directory"/>
+      </Properties>
+    </Component>
+    <Component class="java.awt.Button" name="Removebutton">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="remove"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="RemovebuttonMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Button" name="Helpbutton">
+      <Properties>
+        <Property name="actionCommand" type="java.lang.String" value="Helpbutton"/>
+        <Property name="label" type="java.lang.String" value="Help"/>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="Helpbutton"/>
+      </AccessibilityProperties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="HelpbuttonMouseClicked"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
